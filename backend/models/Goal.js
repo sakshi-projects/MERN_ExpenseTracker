@@ -1,3 +1,4 @@
+
 const mongoose = require("mongoose");
 
 const goalSchema = new mongoose.Schema({
@@ -6,7 +7,7 @@ const goalSchema = new mongoose.Schema({
     required: true
   },
 
-  price: {
+  amount: {
     type: Number,
     required: true
   },
@@ -14,11 +15,13 @@ const goalSchema = new mongoose.Schema({
   months: {
     type: Number,
     required: true
-  },user: {
-  type: mongoose.Schema.Types.ObjectId,
-  ref: "User",
-  required: true
-}
+  },
+
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    required: true
+  }
 });
 
 module.exports = mongoose.model("Goal", goalSchema);

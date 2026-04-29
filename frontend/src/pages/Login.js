@@ -81,6 +81,11 @@ function Login() {
       const res = await API.post("/login", { email, password });
 
       localStorage.setItem("token", res.data.token);
+      localStorage.setItem("token", res.data.token);
+
+if (res.data.user) {
+  localStorage.setItem("userId", res.data.user._id);
+}
       alert("Login Successful ✅");
       navigate("/dashboard");
     } catch (err) {
