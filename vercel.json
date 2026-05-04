@@ -7,10 +7,6 @@
     "backend": {
       "entrypoint": "backend",
       "routePrefix": "/api"
-    },
-    "ml-model": {
-      "entrypoint": "ml-model/ml_model.py",
-      "routePrefix": "/ml"
     }
   }
 }
