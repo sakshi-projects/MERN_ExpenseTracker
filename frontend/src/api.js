@@ -9,8 +9,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  // baseURL: "http://localhost:4000",
-  baseURL: "/api"
+  baseURL: "http://localhost:4000",
 });
 
 // 🔥 THIS PART IS VERY IMPORTANT
