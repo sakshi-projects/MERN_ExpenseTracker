@@ -9,7 +9,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://your-backend-url.onrender.com,
+  baseURL: "https://your-backend-url.onrender.com",
+
 });
 
 // 🔥 THIS PART IS VERY IMPORTANT
