@@ -9,7 +9,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:4000",
+  baseURL: "https://your-backend-url.onrender.com,
 });
 
 // 🔥 THIS PART IS VERY IMPORTANT
